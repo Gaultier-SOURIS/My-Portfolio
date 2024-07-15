@@ -2,10 +2,10 @@ import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function NavBar() {
   return (
-    <div>
+    <div className="text-lg leading-5">
       <h1 className="text-4xl font-black">Gaultier Souris</h1>
-      <h2 className="text-xl font-bold mt-2">Developpeur Frontend</h2>
-      <p className="text-lg leading-4 mt-2">
+      <h2 className="text-xl font-bold mt-2 uppercase">Developpeur Frontend</h2>
+      <p className="  mt-2">
         Developpeur junior et passionné, je suis a la recherche d'une société
         dans laquelle m'épanouir.
       </p>
@@ -19,7 +19,7 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-12">
         <ul className="flex">
           <li className="text-3xl">
             <FaGithubSquare />
