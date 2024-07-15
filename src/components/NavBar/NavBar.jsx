@@ -19,7 +19,7 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-8">
         <ul className="flex">
           <li className="text-3xl">
             <FaGithubSquare />
