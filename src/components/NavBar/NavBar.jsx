@@ -6,8 +6,10 @@ export default function NavBar() {
       <h1 className="text-4xl font-black">Gaultier Souris</h1>
       <h2 className="text-xl font-bold mt-2 uppercase">Developpeur Frontend</h2>
       <p className="  mt-2">
-        Developpeur junior et passionné, je suis a la recherche d'une société
-        dans laquelle m'épanouir.
+        Developpeur frontend passionné par le developpement web et les nouvelles
+        technologies. Je souhaite mettre en avant mes compétences et mon savoir
+        faire pour offrir aux utilisateurs des sites web ergonomiques et
+        intuitifs.
       </p>
 
       <div className="hidden lg:block">

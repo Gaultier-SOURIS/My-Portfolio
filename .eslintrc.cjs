@@ -33,5 +33,13 @@ module.exports = {
     ],
     'react/no-unescaped-entities': 'off',
     'no-console': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: false,
+      },
+    ],
   },
 };
