@@ -1,0 +1,13 @@
+[
+  { "id": 1, "name": "Git" },
+  { "id": 2, "name": "Github" },
+  { "id": 3, "name": "Whimsical" },
+  { "id": 4, "name": "Mocodo" },
+  { "id": 5, "name": "Trello" },
+  { "id": 6, "name": "Discord" },
+  { "id": 7, "name": "slack" },
+  { "id": 8, "name": "Notion" },
+  { "id": 9, "name": "chat-GPT" },
+  { "id": 10, "name": "Copilote" },
+  { "id": 11, "name": "Dall-E" }
+]

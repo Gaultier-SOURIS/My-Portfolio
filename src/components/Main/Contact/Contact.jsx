@@ -21,7 +21,7 @@ export default function Contact() {
             Nom :
           </label>
           <input
-            className="bg-white rounded-md mt-2 h-8 p-2"
+            className="bg-white rounded-md mt-2 h-8 p-2  border-solid border-2 border-orange-400"
             type="text"
             name="name"
             id="name"
@@ -31,7 +31,7 @@ export default function Contact() {
             Email :
           </label>
           <input
-            className="bg-white rounded-md mt-2 h-8 p-2"
+            className="bg-white rounded-md mt-2 h-8 p-2  border-solid border-2 border-orange-400"
             type="email"
             name="email"
             id="email"
@@ -41,14 +41,15 @@ export default function Contact() {
             Message :
           </label>
           <textarea
-            className="bg-white rounded-md mt-2 p-2"
+            className="bg-white rounded-md mt-2 p-2 focus:outline-none  border-solid border-2 border-orange-400"
             name="message"
             id="message"
             rows="5"
             required
           ></textarea>
+
           <button
-            className="bg-blue-700 text-center p-2 w-28 mt-8 rounded-md text-white self-center"
+            className="bg-orange-500 text-center p-2 w-28 mt-8 rounded-md text-white self-center"
             type="submit"
           >
             Envoyer

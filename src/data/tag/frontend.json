@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "React" },
+  { "id": 2, "name": "Redux" },
+  { "id": 3, "name": "Material UI" },
+  { "id": 4, "name": "Semantic UI" },
+  { "id": 5, "name": "Bulma" },
+  { "id": 6, "name": "Tailwind CSS" },
+  { "id": 7, "name": "Bootstrap" },
+  { "id": 8, "name": "Html" },
+  { "id": 9, "name": "Css" },
+  { "id": 10, "name": "Javascript" }
+]
