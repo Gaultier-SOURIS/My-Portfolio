@@ -8,7 +8,7 @@ export default function Management() {
           Outils de gestion
         </h3>
         <div className="mt-4">
-          <ul className="display flex flex-wrap gap-4">
+          <ul className="display flex flex-wrap gap-4 justify-center">
             {management.map((item) => (
               <li
                 className="bg-orange-500 py-2 px-4 rounded-md shadow-lg"

@@ -8,7 +8,7 @@ export default function Contact() {
       </p>
       <div className="mt-4">
         <form
-          className="flex flex-col "
+          className="flex flex-col md:w-2/3 mx-auto "
           name="contact"
           method="POST"
           data-netlify="true"

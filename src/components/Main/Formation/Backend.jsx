@@ -6,7 +6,7 @@ export default function Backend() {
       <div className="border-solid border-2 border-orange-400 rounded-lg p-4 mt-4">
         <h3 className="text-lg uppercase font-bold text-center ">Backend</h3>
         <div className="mt-4">
-          <ul className="display flex flex-wrap gap-4">
+          <ul className="flex flex-wrap gap-4 justify-center">
             {backend.map((item) => (
               <li
                 className="bg-orange-500 py-2 px-4 rounded-md shadow-lg"

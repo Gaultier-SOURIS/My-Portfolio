@@ -2,7 +2,7 @@ import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function NavBar() {
   return (
-    <div className="text-lg leading-5">
+    <div className="text-lg leading-5 lg:p-4 ">
       <h1 className="text-4xl font-black">Gaultier Souris</h1>
       <h2 className="text-xl font-bold mt-2 uppercase">Developpeur Frontend</h2>
       <p className="  mt-2">
