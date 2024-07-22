@@ -1,14 +1,14 @@
 export default function Contact() {
   return (
-    <div className="text-lg leading-5 mb-8">
-      <h2 className="text-xl font-bold uppercase mt-20">Contact</h2>
+    <div className="text-lg leading-5 mb-8 xl:text-xl">
+      <h2 className="text-xl font-bold uppercase mt-20 xl:text-2xl">Contact</h2>
       <p className="mt-8">
         Pour toutes propositions de travail ou simplement envie d'echanger avec
         moi, je vous propose de me contacter via ce formulaire.
       </p>
       <div className="mt-4">
         <form
-          className="flex flex-col md:w-2/3 mx-auto "
+          className="flex flex-col md:w-2/3 lg:w-3/4  mx-auto "
           name="contact"
           method="POST"
           data-netlify="true"
@@ -49,7 +49,7 @@ export default function Contact() {
           ></textarea>
 
           <button
-            className="bg-orange-500 text-center p-2 w-28 mt-8 rounded-md text-white self-center"
+            className="bg-darkBlue border-solid border-2 border-neonBlue text-center p-2 w-28 mt-8 rounded-md text-white self-center"
             type="submit"
           >
             Envoyer

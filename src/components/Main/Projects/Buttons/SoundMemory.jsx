@@ -3,9 +3,9 @@ export default function SoundMemoryBtn() {
     <div>
       <button
         type="button"
-        className=" bg-orange-400 rounded-md w-full mb-2 p-2 text-white text-lg text-center uppercase"
+        className=" bg-darkBlue border-solid border-2 border-neonBlue rounded-md w-full mb-2 p-2 text-white text-md text-center uppercase"
       >
-        Projet : cinematic Sound Memory
+        Cinematic Sound Memory
       </button>
     </div>
   );
