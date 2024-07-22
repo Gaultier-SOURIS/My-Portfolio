@@ -4,7 +4,7 @@ import Main from '@/components/Main/Main';
 
 function App() {
   return (
-    <div className="flex flex-col lg:flex-row m-12">
+    <div className="flex flex-col m-12 lg:flex-row ">
       <NavBar />
       <Main />
     </div>

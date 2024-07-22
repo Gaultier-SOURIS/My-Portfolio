@@ -9,7 +9,7 @@ export default function Project() {
         <div className="md:w-1/2 mt-8">
           <OsurvivorsBtn />
           <img
-            className="rounded-md  border-solid border-2 border-orange-400"
+            className="rounded-md  border-solid border-2 border-neonBlue"
             src="/osurvivors.jpeg"
             alt="Magicien du jeu osurvivors"
           />
@@ -18,7 +18,7 @@ export default function Project() {
         <div className="md:w-1/2 mt-8">
           <SoundMemoryBtn />
           <img
-            className="rounded-md  border-solid border-2 border-orange-400"
+            className="rounded-md  border-solid border-2 border-neonBlue"
             src="/soundmemory.jpg"
             alt="Magicien du jeu osurvivors"
           />

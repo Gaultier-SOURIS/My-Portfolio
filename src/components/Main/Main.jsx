@@ -5,7 +5,7 @@ import Projects from './Projects/Projects';
 
 export default function Main() {
   return (
-    <div>
+    <div className="lg:p-4 lg:absolute lg:right-0 lg:top-0 lg:w-2/3">
       <About />
       <Formation />
       <Projects />

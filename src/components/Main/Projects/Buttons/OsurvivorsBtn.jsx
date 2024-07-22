@@ -3,7 +3,7 @@ export default function OsurvivorsBtn() {
     <div>
       <button
         type="button"
-        className="border-solid border-2 border-orange-400 rounded-md w-full mb-2 p-1 text-center uppercase "
+        className=" bg-orange-400 rounded-md w-full mb-2 p-2 text-white text-lg text-center uppercase "
       >
         Projet : O'survivors
       </button>
