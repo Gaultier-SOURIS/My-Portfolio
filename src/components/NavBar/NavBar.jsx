@@ -14,6 +14,7 @@ export default function NavBar() {
 
       <div className="hidden lg:block lg: mt-16">
         <ul className="flex flex-col gap-4">
+          <li>Accueil</li>
           <li>A propos</li>
           <li>Formation</li>
           <li>Projets</li>
@@ -24,14 +25,34 @@ export default function NavBar() {
       <div className="mt-8 lg:mt-64 xl:mt-60">
         <ul className="flex items-center">
           <li className="text-3xl">
-            <FaGithubSquare />
+            <a
+              target="_blank"
+              href="https://github.com/Gaultier-SOURIS"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+            >
+              <FaGithubSquare />
+            </a>
           </li>
           <li className="text-3xl">
-            <FaLinkedin />
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/gaultier-souris-24678a261/"
+              rel="noopener noreferrer"
+              aria-label="LinkendInd Profile"
+            >
+              <FaLinkedin />
+            </a>
           </li>
           <li>
             <div className="bg-white w-[175px] h-[26.25px] m-0.5 rounded-sm text-darkBlue font-bold text-center pt-1">
-              Télécharger mon cv
+              <a
+                href="cv-gaultier-souris.pdf"
+                download
+                aria-label="telecharger mon cv"
+              >
+                Télécharger mon cv
+              </a>
             </div>
           </li>
         </ul>

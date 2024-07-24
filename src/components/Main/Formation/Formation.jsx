@@ -1,6 +1,6 @@
-import Frontend from './Frontend';
-import Backend from './Backend';
-import Management from './Management';
+import Frontend from './Frontend/Frontend';
+import Backend from './Backend/Backend';
+import Management from './Management/Management';
 
 export default function Formation() {
   return (
