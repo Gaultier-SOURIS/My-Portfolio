@@ -1,9 +1,26 @@
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
+  const scrollToSection = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = -72;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition + offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
-    <div className="text-lg leading-5 lg:p-4 lg:fixed lg:top-0 lg:left-0  lg:w-1/3 lg:h-lvh lg:mt-12  xl:text-xl lg:ml-20 xl:ml-40">
-      <h1 className="text-4xl font-black ">Gaultier Souris</h1>
+    <div className="text-lg leading-5 lg:p-4 lg:fixed lg:top-0 lg:left-0 lg:w-1/3 lg:h-lvh lg:mt-12 xl:text-xl lg:ml-20 xl:ml-40">
+      <h1 className="text-4xl font-black">Gaultier Souris</h1>
       <h2 className="text-xl font-bold mt-2 uppercase">Developpeur Frontend</h2>
       <p className="mt-2 lg:w-3/4 text-justify">
         Developpeur frontend passionné par le developpement web et les nouvelles
@@ -12,17 +29,38 @@ export default function NavBar() {
         intuitifs.
       </p>
 
-      <div className="hidden lg:block lg: mt-16">
+      <div className="hidden lg:block lg:mt-16">
         <ul className="flex flex-col gap-4">
-          <li>Accueil</li>
-          <li>A propos</li>
-          <li>Formation</li>
-          <li>Projets</li>
-          <li>Contact</li>
+          <Link to="/">
+            <li>Accueil</li>
+          </Link>
+          <li>
+            <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>
+              A propos
+            </a>
+          </li>
+          <li>
+            <a
+              href="#formation"
+              onClick={(e) => scrollToSection(e, 'formation')}
+            >
+              Formation
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')}>
+              Projets
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
 
-      <div className="mt-8 lg:mt-64 xl:mt-60">
+      <div className="mt-8 lg:mt-56 xl:mt-72">
         <ul className="flex items-center">
           <li className="text-3xl">
             <a
@@ -39,7 +77,7 @@ export default function NavBar() {
               target="_blank"
               href="https://www.linkedin.com/in/gaultier-souris-24678a261/"
               rel="noopener noreferrer"
-              aria-label="LinkendInd Profile"
+              aria-label="LinkedIn Profile"
             >
               <FaLinkedin />
             </a>
@@ -51,7 +89,7 @@ export default function NavBar() {
                 download
                 aria-label="telecharger mon cv"
               >
-                Télécharger mon cv
+                Télécharger mon CV
               </a>
             </div>
           </li>

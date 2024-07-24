@@ -4,7 +4,7 @@ import Management from './Management/Management';
 
 export default function Formation() {
   return (
-    <div className="text-lg leading-5 xl:text-xl">
+    <div id="formation" className="text-lg leading-5 xl:text-xl">
       <h2 className="text-xl font-bold uppercase mt-20 xl:text-2xl">
         Formation
       </h2>

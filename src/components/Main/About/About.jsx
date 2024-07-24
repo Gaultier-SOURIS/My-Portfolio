@@ -1,9 +1,7 @@
 export default function About() {
   return (
-    <div className="text-lg leading-5 xl:text-xl">
-      <h2 className="text-xl font-bold uppercase mt-28 lg:mt-14 xl:text-2xl">
-        A propos
-      </h2>
+    <div id="about" className="text-lg leading-5 mt-28 lg:mt-14 xl:text-xl">
+      <h2 className="text-xl font-bold uppercase  xl:text-2xl">A propos</h2>
       <p className="mt-8 text-justify">
         En 2022, apres plusieurs années a travaillé dans l'aéronautique comme
         Gap Leader, et un soucis de santé, je quitte ma société pour me

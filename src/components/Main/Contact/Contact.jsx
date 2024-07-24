@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="text-lg leading-5 mb-8 xl:text-xl">
+    <div id="contact" className="text-lg leading-5 mb-8 xl:text-xl">
       <h2 className="text-xl font-bold uppercase mt-20 xl:text-2xl">Contact</h2>
       <p className="mt-8">
         Pour toutes propositions de travail ou simplement envie d'echanger avec
