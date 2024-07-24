@@ -2,7 +2,7 @@ import WebsiteBtn from './Btn/WebsiteBtn';
 
 export default function Osurvivors() {
   return (
-    <div className=" text-lg leading-5 xl:text-xl lg:p-4 lg:absolute lg:right-0 lg:top-0 lg:w-1/2 lg:mr-20 xl:mr-40">
+    <div className=" text-lg xl:text-xl leading-5 lg:p-4 lg:absolute lg:right-0 lg:top-0 lg:w-1/2 lg:mr-20 xl:mr-40">
       <h2 className="mt-28 text-xl font-bold uppercase  lg:mt-14 xl:text-2xl">
         Osurvivors
       </h2>

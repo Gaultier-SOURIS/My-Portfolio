@@ -83,7 +83,7 @@ export default function NavBar() {
             </a>
           </li>
           <li>
-            <div className="bg-white w-[175px] h-[26.25px] m-0.5 rounded-sm text-darkBlue font-bold text-center pt-1">
+            <div className="bg-white w-[175px] h-[26.25px] xl:w-[200px] m-0.5 rounded-sm text-darkBlue font-bold text-center pt-1">
               <a
                 href="cv-gaultier-souris.pdf"
                 download
