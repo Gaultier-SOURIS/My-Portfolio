@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        handScript: ['Playwrite CU'],
+        handScript: ['Comic Neue'],
       },
       colors: {
         darkBlue: '#0D1B2A',
