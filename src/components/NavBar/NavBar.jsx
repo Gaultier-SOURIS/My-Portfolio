@@ -60,6 +60,10 @@ export default function NavBar() {
         </ul>
       </div>
 
+      <div className="hidden lg:block xl:absolute xl:top-[300px] xl:left-[205px]">
+        <img src="/meWhite.png" alt="ma silhouette" />
+      </div>
+
       <div className="mt-8 lg:mt-56 xl:mt-72">
         <ul className="flex items-center">
           <li className="text-3xl">
