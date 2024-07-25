@@ -1,9 +1,23 @@
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { MdHome, MdOutlineLightMode } from 'react-icons/md';
 
 export default function NavBar() {
   return (
-    <div className="text-lg leading-5 lg:p-4 lg:fixed lg:top-0 lg:left-0 lg:w-1/3 lg:h-lvh lg:mt-12 xl:text-xl lg:ml-20 xl:ml-40">
+    <div
+      id="home"
+      className="text-lg leading-5 lg:p-4 lg:fixed lg:top-0 lg:left-0 lg:w-1/3 lg:h-lvh lg:mt-12 xl:text-xl lg:ml-20 xl:ml-40"
+    >
+      <div className="fixed top-12 right-3 flex flex-col gap-4 ">
+        <Link to="/#home">
+          <div>
+            <MdHome className="text-2xl lg:hidden" />
+          </div>
+        </Link>
+        <div>
+          <MdOutlineLightMode className="text-2xl" />
+        </div>
+      </div>
       <h1 className="text-4xl font-black">Gaultier Souris</h1>
       <h2 className="text-xl font-bold mt-2 uppercase">Developpeur Frontend</h2>
       <p className="mt-2 lg:w-3/4 text-justify">
