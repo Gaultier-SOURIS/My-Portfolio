@@ -6,6 +6,7 @@ import Main from '@/components/Main/Main';
 import Osurvivors from '../Websites/Osurvivors';
 import SoundMemory from '../Websites/SoundMemory';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
+import NotFound from '../NotFound/NotFound';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -53,6 +54,7 @@ function App() {
             path="/cinematic-sound-memory"
             element={<SoundMemory darkMode={darkMode} />}
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>
