@@ -1,9 +1,15 @@
 import frontend from '@/data/tag/frontend.json';
 
-export default function Frontend() {
+export default function Frontend({ darkMode }) {
   return (
     <div className="text-lg leading-5">
-      <div className="border-solid border-2 border-neonBlue rounded-lg p-4 mt-4">
+      <div
+        className={`${
+          darkMode
+            ? 'border-neonBlue border-solid border-2'
+            : 'border-darkBlue border-solid border-2'
+        }  rounded-lg p-4 mt-4`}
+      >
         <h3 className="text-lg uppercase font-bold text-center xl:text-xl ">
           Frontend
         </h3>
@@ -11,7 +17,11 @@ export default function Frontend() {
           <ul className="display flex flex-wrap gap-4 justify-center">
             {frontend.map((item) => (
               <li
-                className="bg-neonBlue text-darkBlue py-2 px-4 rounded-md"
+                className={`${
+                  darkMode
+                    ? 'bg-neonBlue text-darkBlue'
+                    : 'bg-darkBlue  text-neonBlue'
+                } py-2 px-4 rounded-md`}
                 key={item.id}
               >
                 {item.name}

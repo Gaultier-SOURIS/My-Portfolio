@@ -1,21 +1,29 @@
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { MdHome, MdOutlineLightMode } from 'react-icons/md';
+import { MdHome, MdOutlineLightMode, MdOutlineDarkMode } from 'react-icons/md';
 
-export default function NavBar() {
+export default function NavBar({ darkMode, setDarkMode }) {
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
   return (
     <div
       id="home"
       className="text-lg leading-5 lg:p-4 lg:fixed lg:top-0 lg:left-0 lg:w-1/3 lg:h-lvh lg:mt-12 xl:text-xl lg:ml-20 xl:ml-40"
     >
-      <div className="fixed top-12 right-3 flex flex-col gap-4 ">
+      <div className="fixed top-3 right-3 lg:top-6 lg:right-6 xl:right-12 flex flex-col justify-center items-center gap-4 ">
         <Link to="/#home">
           <div>
             <MdHome className="text-2xl lg:hidden" />
           </div>
         </Link>
         <div>
-          <MdOutlineLightMode className="text-2xl" />
+          {darkMode ? (
+            <MdOutlineLightMode className="text-2xl" onClick={toggleDarkMode} />
+          ) : (
+            <MdOutlineDarkMode className="text-2xl" onClick={toggleDarkMode} />
+          )}
         </div>
       </div>
       <h1 className="text-4xl font-black">Gaultier Souris</h1>
@@ -48,7 +56,10 @@ export default function NavBar() {
       </div>
 
       <div className="hidden lg:block lg:w-1/2 lg:absolute lg:top-[400px] lg:left-[100px] xl:top-[300px] xl:left-[150px]">
-        <img src="/meWhite.png" alt="ma silhouette" />
+        <img
+          src={darkMode ? '/meWhite.png' : 'meBlack.png'}
+          alt="ma silhouette"
+        />
       </div>
 
       <div className="mt-8 lg:mt-56 xl:mt-72">
@@ -74,7 +85,11 @@ export default function NavBar() {
             </a>
           </li>
           <li>
-            <div className="bg-white w-[175px] h-[26.25px] xl:w-[200px] m-0.5 rounded-sm text-darkBlue font-bold text-center pt-1">
+            <div
+              className={`${
+                darkMode ? 'bg-white text-darkBlue' : 'bg-black text-white'
+              } w-[175px] h-[26.25px] xl:w-[200px] m-0.5 rounded-sm  font-bold text-center pt-1`}
+            >
               <a
                 href="cv-gaultier-souris.pdf"
                 download

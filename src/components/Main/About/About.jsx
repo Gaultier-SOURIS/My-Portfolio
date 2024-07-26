@@ -3,10 +3,9 @@ export default function About() {
     <div id="about" className="text-lg leading-5 mt-28 lg:mt-14 xl:text-xl">
       <h2 className="text-xl font-bold uppercase  xl:text-2xl">A propos</h2>
       <p className="mt-8 text-justify">
-        En 2022, apres plusieurs années a travaillé dans l'aéronautique comme
-        Gap Leader, et un soucis de santé, je quitte ma société pour me
-        reconvertir dans un domaine qui m'attire déja depuis plusieurs années,
-        le developpement web.
+        En 2022, apres plusieurs années a travaillé dans l'aéronautique et un
+        soucis de santé, je quitte ma société pour me reconvertir dans un
+        domaine qui m'attire déja depuis plusieurs années, le developpement web.
       </p>
       <p className="mt-4 text-justify">
         Septembre 2023, je commence une formation de developpeur web fullstack

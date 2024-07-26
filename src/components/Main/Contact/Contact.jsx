@@ -1,4 +1,4 @@
-export default function Contact() {
+export default function Contact({ darkMode }) {
   return (
     <div id="contact" className="text-lg leading-5 mb-8 xl:text-xl">
       <h2 className="text-xl font-bold uppercase mt-20 xl:text-2xl">Contact</h2>
@@ -21,7 +21,9 @@ export default function Contact() {
             Nom :
           </label>
           <input
-            className="bg-white rounded-md mt-2 h-8 p-2  border-solid border-2 border-neonBlue"
+            className={`${
+              darkMode ? ' border-neonBlue' : 'border-darkBlue'
+            } bg-white rounded-md mt-2 h-8 p-2  border-solid border-2 text-black `}
             type="text"
             name="name"
             id="name"
@@ -31,7 +33,9 @@ export default function Contact() {
             Email :
           </label>
           <input
-            className="bg-white rounded-md mt-2 h-8 p-2  border-solid border-2 border-neonBlue"
+            className={`${
+              darkMode ? ' border-neonBlue' : 'border-darkBlue'
+            } bg-white rounded-md mt-2 h-8 p-2  border-solid border-2 text-black `}
             type="email"
             name="email"
             id="email"
@@ -41,7 +45,9 @@ export default function Contact() {
             Message :
           </label>
           <textarea
-            className="bg-white rounded-md mt-2 p-2 focus:outline-none  border-solid border-2 border-neonBlue"
+            className={`${
+              darkMode ? 'border-neonBlue' : 'border-darkBlue'
+            } bg-white rounded-md mt-2 p-2 focus:outline-none  border-solid border-2 text-black`}
             name="message"
             id="message"
             rows="5"
@@ -49,7 +55,11 @@ export default function Contact() {
           ></textarea>
 
           <button
-            className="bg-darkBlue border-solid border-2 border-neonBlue text-center p-2 w-28 mt-8 rounded-md text-white self-center"
+            className={`${
+              darkMode
+                ? 'border-neonBlue bg-darkBlue text-white'
+                : 'border_darkBlue bg-white text-darkBlue'
+            }  border-solid border-2  text-center p-2 w-28 mt-8 rounded-md  self-center`}
             type="submit"
           >
             Envoyer
