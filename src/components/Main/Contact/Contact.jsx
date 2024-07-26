@@ -3,7 +3,7 @@ export default function Contact({ darkMode }) {
     <div id="contact" className="text-lg leading-5 mb-8 xl:text-xl">
       <h2 className="text-xl font-bold uppercase mt-20 xl:text-2xl">Contact</h2>
       <p className="mt-8">
-        Pour toutes propositions de travail ou simplement envie d'echanger avec
+        Pour toutes propositions de travail ou simplement envie d'échanger avec
         moi, je vous propose de me contacter via ce formulaire.
       </p>
       <div className="mt-4">
@@ -13,6 +13,7 @@ export default function Contact({ darkMode }) {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          action="/thank-you"
         >
           <input type="hidden" name="form-name" value="contact" />
           <input type="hidden" name="bot-field" />
